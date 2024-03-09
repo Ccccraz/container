@@ -1,0 +1,21 @@
+{
+	"name": "archlinux",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+	"remoteUser": "code",
+	"workspaceMount": "source=${localWorkspaceFolder}/,target=/home/code/workspaces,type=bind",
+	"workspaceFolder": "/home/code/workspaces",
+	"runArgs": [
+		"--name",
+		"arch"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
+}

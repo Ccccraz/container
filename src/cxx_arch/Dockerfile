@@ -6,3 +6,6 @@ RUN yay -Sy --needed \
     llvm \
     clang \
     --noconfirm
+
+RUN xrepo install -y fmt \
+    boost

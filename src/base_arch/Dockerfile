@@ -12,6 +12,7 @@ RUN pacman -Sy --needed \
   base-devel \
   git \
   curl \
+  unzip \
   wget \
   zsh \
   ripgrep \

@@ -6,6 +6,8 @@ on:
         types:
             - completed
 
+    workflow_dispatch:
+
 jobs:
   push_to_registry:
     name: build cpp dev container based on archlinux
@@ -32,5 +34,5 @@ jobs:
           context: ./src/cxx_arch
           file: ./src/cxx_arch/Dockerfile
           push: true
-          tags: archcxx
+          tags: ${{ secrets.DOCKER_USERNAME }}/dev_container_base_arch:cxxarch
           labels: ${{ steps.meta.outputs.labels }}

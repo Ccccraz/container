@@ -34,5 +34,5 @@ jobs:
           context: ./src/cxx_arch
           file: ./src/cxx_arch/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/dev_container_base_arch:cxxarch
+          tags: ${{ secrets.DOCKER_USERNAME }}/container:cxxarch
           labels: ${{ steps.meta.outputs.labels }}

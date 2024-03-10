@@ -1,4 +1,4 @@
-FROM ccccr/dev_container_base_arch:latest
+FROM ccccr/container:basearch
 
 RUN yay -Sy --needed \
     xmake \
